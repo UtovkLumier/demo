@@ -63,7 +63,7 @@ config_xray() {
 		config_content+="[inbounds.settings]\n"
 		if [ "$config_type" == "socks" ]; then
 			config_content+="auth = \"password\"\n"
-			config_content+="udp = true\n"
+			config_content+="udp = true\t"
 			config_content+="ip = \"${IP_ADDRESSES[i]}\"\n"
 			config_content+="[[inbounds.settings.accounts]]\n"
 			config_content+="user = \"$SOCKS_USERNAME\"\n"
